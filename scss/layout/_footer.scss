@@ -1,0 +1,117 @@
+footer{
+	color:#fff;
+	font-size:15px;
+	.widget{
+		margin-bottom:20px;
+	}	
+	strong{
+		color:#fff;
+	}	
+	.footer-logo{
+		max-width:150px;
+		margin-bottom:30px;
+		img{
+			width:100%;
+		}
+	}
+	.widget-logo ul{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		
+		li{
+			display:inline-block;
+		    flex: 50%;	
+		    padding: 0 15px 15px 0px;	
+		}
+	}
+	.dlab-social-icon{
+		li{
+			display:inline-block;
+			margin-right:20px;			
+		}
+		a{
+			color:#fff;
+			font-size:17px;
+		}
+	}
+	.widget_about{
+		p{
+			margin-bottom:20px;
+		}
+	}
+	
+	.footer-title{
+		margin: 0;
+		font-size: 18px;
+		font-weight: 600;
+		padding-bottom: 10px;
+		margin-bottom: 40px;
+		position: relative;
+		color: #fff;
+		line-height: 1.2;
+		text-transform: uppercase;
+		
+		&:after{
+			content: "";
+			background:#fff;
+			width: 55px;
+			height: 3px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+	.footer-top{
+		background: $primary;
+		padding: 70px 0 30px;
+		@include respond('phone-land'){
+			padding: 50px 0 20px;
+		}
+	}
+	.footer-bottom {
+		background-color:$primary;
+		padding: 20px 0;
+		font-size: 14px;
+		border-top:1px solid rgba(255,255,255,0.25);
+	}
+	.widget-link{
+		li{
+			display: inline-block;
+			text-transform: uppercase;
+			margin-left: 20px;
+			@include respond('phone-land'){
+				margin-left: 8px;
+				margin-right: 7px;
+			}
+		}
+		a{
+			color:#fff;
+		}
+	}
+}
+.contact-info-bx{
+	li{
+		padding-bottom: 10px;
+		position: relative;
+		padding-left: 30px;
+		padding-top: 2px;
+		
+		strong{
+			font-weight:400;
+		}
+	}
+	i{
+		width: auto;
+		height: 22px;
+		color: #fff;
+		line-height: 26px;
+		text-align: center;
+		border-radius: 30px;
+		margin-right: 5px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 22px;
+	}
+}

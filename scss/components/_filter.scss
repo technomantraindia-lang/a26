@@ -1,0 +1,119 @@
+// FILTER BUTTONS CSS
+.site-filters {
+    margin-bottom: 30px;
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+	li {
+		display: inline-block;
+		padding: 0;
+		margin-bottom:3px;
+		&.btn {
+			box-shadow: none;
+			-webkit-box-shadow: none;
+			outline: none !important;
+		}
+		input {
+			display: none;
+		}
+		a {
+			margin: 0 5px 5px 0;
+		}
+		&.active{
+			[class*="btn"] {
+				color: #fff;
+				background-color: #EFBB20;
+			}
+		}
+	}
+	&.center{
+		text-align: center;
+		ul {
+			display: inline-block;
+			margin: auto;
+		}
+		[class*="btn"] {
+			display: inline-block;
+			margin: 0 5px 10px;
+			text-transform: uppercase;
+			@include respond('phone'){
+				margin: 0 1px 5px;
+				padding: 5px 10px;
+				font-size: 12px;
+			}
+		}
+	}
+}
+// Filter
+.filter-style1{
+	margin-bottom:50px;
+	@include respond('phone'){
+		margin-bottom:30px;
+	}
+	ul{
+		padding:0;
+		li{
+			color:#000;
+			font-size: 18px;
+			text-transform: capitalize;
+			font-weight: 500;
+			margin: 0 20px;
+			padding: 12px 0;
+			position: relative;
+			border-radius:0;
+			background:transparent;
+			overflow:hidden;
+			@include respond('phone'){
+				padding: 5px 0;
+				font-size: 14px;
+				margin: 0 5px;
+			}
+			
+			&:hover{
+				background:transparent;
+			}
+			a{
+				color:#000;
+				margin:0;
+				text-transform:uppercase;
+			}
+			&.active{
+				
+				a{
+					color:#737373;
+				}
+			}
+			&:before,
+			&:after{
+				content:"";
+				position:absolute;
+				width:100%;
+				height:6px;
+				background:$primary;
+				@include transitionMedium;
+				@include respond('phone'){
+					height:2px;
+				}
+			}
+			&:before{
+				top:0;
+				left:-100%;
+			}
+			&:after{
+				bottom:0;
+				right:-100%;
+			}
+			&:hover:before,
+			&.active:before{
+				top:0;
+				left:0;
+			}
+			&:hover:after,
+			&.active:after{
+				right:0;
+			}
+		}
+	
+	}
+}

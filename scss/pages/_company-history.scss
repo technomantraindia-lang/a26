@@ -1,0 +1,85 @@
+// COMPANY HISTORY
+.animation-jet {
+    max-width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.history-box{
+	display:flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom:30px;
+	p{
+		color:#666666;
+		line-height:26px;
+		font-size:16px;
+		margin-bottom:0;
+		@include respond('tab-port'){
+			line-height:24px;
+			font-size:14px;
+		}
+	}
+	.history-media{
+		flex: 0 0 70%;
+		max-width: 70%;
+		@include respond('tab-port'){
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+		@include respond('phone'){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+	.history-details{
+		flex: 0 0 30%;
+		padding-right: 50px;
+		max-width: 30%;
+		@include respond('tab-port'){
+			flex: 0 0 50%;
+			padding-right: 20px;
+			max-width: 50%;
+		}
+		@include respond('phone'){
+			flex: 0 0 100%;
+			max-width: 100%;
+			padding-right: 0;
+			margin-bottom:20px;
+		}
+	}
+	&.right {
+		flex-direction: row-reverse;
+		.history-details{
+			padding-left: 50px;
+			padding-right: 0;
+			@include respond('tab-port'){
+				padding-left: 20px;
+			}
+			@include respond('phone'){
+				padding-left: 0;
+			}
+		}
+		
+	}
+}
+.history-head{
+	border-left:4px solid $primary;
+	padding-left: 25px;
+	margin-bottom:15px;
+	@include respond('tab-port'){
+		padding-left: 15px;
+	}
+	h2{
+		font-size: 60px;
+		@include respond('tab-port'){
+			font-size:40px;
+		}
+	}
+	h3{
+		font-size: 28px;
+		@include respond('tab-port'){
+			font-size:22px;
+		}
+	}
+}
