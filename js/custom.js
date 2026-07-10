@@ -22,7 +22,7 @@ var KingArchitect = function(){
 				var headerHeight =   parseInt($('.onepage').css('height'), 10);
 				
 				
-				$('body').scrollspy({target: ".navbar", offset: headerHeight+2}); 
+				$('body').scrollspy({target: ".sidenav-list", offset: headerHeight+2}); 
 				
 				var scrollTopPosition = seactionPosition - (headerHeight);
 				
@@ -33,7 +33,7 @@ var KingArchitect = function(){
 				});
 			}   
 		});
-		$('body').scrollspy({target: ".navbar", offset: headerHeight + 2});  
+		$('body').scrollspy({target: ".sidenav-list", offset: headerHeight + 2});  
 	}
 	
 	/* Header Height ============ */
