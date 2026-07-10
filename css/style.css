@@ -19491,12 +19491,19 @@ footer {
 .a26-why-choose {
   background: #000;
   overflow: hidden;
-  padding: 100px 0 110px;
+  padding: 100px 0 108px;
   position: relative;
 }
 
 .a26-why-choose:after {
   display: none;
+}
+
+.a26-why-choose .container.a26-why-wrap {
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 }
 
 .a26-why-wrap {
@@ -19505,122 +19512,158 @@ footer {
 }
 
 .a26-why-header {
-  margin: 0 auto 64px;
-  max-width: 720px;
+  margin: 0 auto 52px;
+  max-width: 640px;
   text-align: center;
 }
 
 .a26-why-label {
-  color: #c9a45c;
+  color: #c1a36b;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.28em;
-  margin-bottom: 18px;
+  letter-spacing: 0.36em;
+  margin-bottom: 22px;
   text-transform: uppercase;
 }
 
 .a26-why-header h2 {
   color: #fff;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 52px;
+  font-size: 56px;
   font-weight: 400;
-  line-height: 1.15;
-  margin-bottom: 20px;
+  line-height: 1.08;
+  margin-bottom: 16px;
 }
 
 .a26-why-lead {
-  color: #8f8f8f;
-  font-size: 15px;
-  line-height: 1.75;
+  color: #9a9a9a;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
   margin: 0 auto;
-  max-width: 560px;
+  max-width: 500px;
 }
 
 .a26-why-grid {
   display: grid;
-  gap: 24px;
+  gap: 16px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 0 auto;
-  max-width: 1180px;
+}
+
+.a26-why-choose .a26-why-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .a26-why-card {
-  background: #141414;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #111;
+  border: none;
   border-radius: 12px;
-  min-height: 0;
-  padding: 36px 32px 34px;
-  position: relative;
+  min-height: 100%;
+  padding: 40px 36px 38px;
   text-align: left;
-  transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.a26-why-choose .a26-why-card {
+  background: #111;
+  border: none;
+  border-radius: 12px;
+  box-shadow: none;
+  min-height: 100%;
+  padding: 40px 36px 38px;
+  text-align: left;
 }
 
 .a26-why-card:hover {
-  background: #181818;
-  border-color: rgba(201, 164, 92, 0.35);
-  transform: translateY(-4px);
+  background: #111;
+}
+
+.a26-why-choose .a26-why-card:hover {
+  background: #111;
 }
 
 .a26-why-icon {
   align-items: center;
-  background: rgba(201, 164, 92, 0.06);
-  border: 1px solid rgba(201, 164, 92, 0.45);
-  border-radius: 10px;
+  background: transparent;
+  border: 1px solid rgba(193, 163, 107, 0.55);
+  border-radius: 8px;
   display: inline-flex;
-  height: 52px;
+  height: 46px;
   justify-content: center;
-  margin-bottom: 24px;
-  transition: border-color 0.3s ease, background 0.3s ease;
-  width: 52px;
-}
-
-.a26-why-card:hover .a26-why-icon {
-  background: rgba(201, 164, 92, 0.1);
-  border-color: rgba(201, 164, 92, 0.65);
+  margin-bottom: 28px;
+  width: 46px;
 }
 
 .a26-why-icon i {
-  color: #c9a45c;
-  font-size: 24px;
+  color: #c1a36b;
+  font-size: 20px;
+}
+
+.a26-why-choose .a26-why-icon i {
+  color: #c1a36b;
+  display: inline;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 0;
 }
 
 .a26-why-card h3 {
   color: #fff;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  line-height: 1.35;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.28;
   margin-bottom: 12px;
-  text-transform: none;
 }
 
 .a26-why-card p {
-  color: #8a8a8a;
-  font-size: 14px;
-  line-height: 1.7;
+  color: #8d8d8d;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.a26-why-choose .a26-why-card h3 {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.28;
+  margin-bottom: 12px;
+}
+
+.a26-why-choose .a26-why-card p {
+  color: #8d8d8d;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.75;
   margin: 0;
 }
 
 @media only screen and (max-width: 1199px) {
   .a26-why-choose {
-    padding: 80px 0 85px;
+    padding: 84px 0 92px;
   }
 
   .a26-why-header h2 {
-    font-size: 42px;
+    font-size: 44px;
   }
 
-  .a26-why-grid {
-    gap: 20px;
+  .a26-why-choose .a26-why-grid {
+    gap: 14px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media only screen and (max-width: 767px) {
   .a26-why-choose {
-    padding: 65px 0 70px;
+    padding: 68px 0 76px;
   }
 
   .a26-why-header h2 {
@@ -19628,21 +19671,25 @@ footer {
   }
 
   .a26-why-lead {
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  .a26-why-card {
-    padding: 30px 26px 28px;
+  .a26-why-choose .a26-why-card {
+    padding: 32px 28px 30px;
+  }
+
+  .a26-why-choose .a26-why-card h3 {
+    font-size: 19px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  .a26-why-grid {
+  .a26-why-choose .a26-why-grid {
     grid-template-columns: 1fr;
   }
 
   .a26-why-header h2 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 
@@ -21147,13 +21194,13 @@ footer {
   height: 1px;
 }
 
-.a26-why-grid {
+.a26-why-contact .a26-why-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 
-.a26-why-card {
+.a26-why-contact .a26-why-card {
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(166, 97, 28, 0.18);
   border-radius: 8px;
@@ -21163,7 +21210,7 @@ footer {
   text-align: center;
 }
 
-.a26-why-card i {
+.a26-why-contact .a26-why-card i {
   color: #c3743c;
   display: block;
   font-size: 50px;
@@ -21171,14 +21218,14 @@ footer {
   margin-bottom: 8px;
 }
 
-.a26-why-card h4 {
+.a26-why-contact .a26-why-card h4 {
   color: #17120f;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 17px;
   margin: 0 0 4px;
 }
 
-.a26-why-card p {
+.a26-why-contact .a26-why-card p {
   color: #24201c;
   font-size: 13px;
   line-height: 1.35;
@@ -21317,7 +21364,7 @@ footer {
     display: none;
   }
 
-  .a26-why-grid {
+  .a26-why-contact .a26-why-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -21347,7 +21394,7 @@ footer {
   }
 
   .a26-form-grid,
-  .a26-why-grid,
+  .a26-why-contact .a26-why-grid,
   .a26-office-map {
     grid-template-columns: 1fr;
   }
@@ -21448,7 +21495,7 @@ footer {
   margin-bottom: 18px;
 }
 
-.a26-why-grid {
+.a26-why-contact .a26-why-grid {
   gap: 20px;
 }
 
