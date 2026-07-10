@@ -7,7 +7,7 @@ function dz_rev_slider_1(){
 		dzrevapi = dzQuery("#rev_slider_1164_1").show().revolution({
 			sliderType:"standard",
 			jsFileLocation:"plugins/revolution/revolution/js/",
-			sliderLayout:"fullscreen",
+			sliderLayout:"auto",
 			dottedOverlay:"none",
 			delay:9000,
 			navigation: {
@@ -35,7 +35,7 @@ function dz_rev_slider_1(){
 			responsiveLevels:[1240,1025,778,480],
 			visibilityLevels:[1240,1025,778,480],
 			gridwidth:[1240,1025,778,480],
-			gridheight:[970,970,960,720],
+			gridheight:[720,680,620,560],
 			lazyType:"single",
 			parallax: {
 				type:"scroll",
