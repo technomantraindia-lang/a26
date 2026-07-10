@@ -21730,44 +21730,55 @@ footer {
 }
 
 /* Hero slider compact card override */
+.rev-slider .a26-slide-shade {
+  background: rgba(0, 0, 0, 0.48) !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.rev-slider .a26-slide-title,
 .rev-slider #slide-3204-layer-1,
 .rev-slider #slide-200-layer-1,
 .rev-slider #slide-201-layer-1 {
-  font-size: 40px !important;
-  line-height: 48px !important;
+  color: #ffffff !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 76px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.1 !important;
+  text-align: center !important;
+  text-shadow: 0 8px 26px rgba(0, 0, 0, 0.48) !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
 }
 
 .rev-slider #slide-3204-layer-2,
 .rev-slider #slide-200-layer-2,
 .rev-slider #slide-201-layer-2 {
-  max-height: 285px !important;
-  max-width: 315px !important;
+  max-height: 245px !important;
+  max-width: 300px !important;
 }
 
 .rev-slider #slide-3204-layer-2 .rs-looped,
 .rev-slider #slide-200-layer-2 .rs-looped,
 .rev-slider #slide-201-layer-2 .rs-looped {
-  height: 285px !important;
-  max-height: 285px !important;
-  max-width: 315px !important;
-  width: 315px !important;
+  height: 245px !important;
+  max-height: 245px !important;
+  max-width: 300px !important;
+  width: 300px !important;
 }
 
 .rev-slider #slide-3204-layer-2 .rs-looped img,
 .rev-slider #slide-200-layer-2 .rs-looped img,
 .rev-slider #slide-201-layer-2 .rs-looped img {
-  height: 285px !important;
-  max-height: 285px !important;
-  max-width: 315px !important;
-  object-fit: fill;
-  width: 315px !important;
+  display: none !important;
 }
 
 .rev-slider .a26-hero-box-bg {
-  height: calc(100% - 30px) !important;
-  left: 15px !important;
-  top: 15px !important;
-  width: calc(100% - 30px) !important;
+  height: 170px !important;
+  left: 14px !important;
+  top: 14px !important;
+  width: 430px !important;
 }
 
 .rev-slider #slide-3204-layer-4,
@@ -21787,6 +21798,19 @@ footer {
     max-height: 235px !important;
     max-width: 250px !important;
     width: 250px !important;
+  }
+
+  .rev-slider #slide-3204-layer-1,
+  .rev-slider #slide-200-layer-1,
+  .rev-slider #slide-201-layer-1 {
+    font-size: 42px !important;
+    line-height: 1.15 !important;
+    white-space: nowrap !important;
+  }
+
+  .rev-slider .a26-hero-box-bg {
+    height: calc(100% - 28px) !important;
+    width: calc(100% - 28px) !important;
   }
 }
 
