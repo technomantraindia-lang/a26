@@ -19569,12 +19569,13 @@ footer {
 
 .a26-why-choose .a26-why-card {
   background: #111;
-  border: none;
+  border: 1px solid rgba(193, 163, 107, 0.38);
   border-radius: 12px;
   box-shadow: none;
   min-height: 100%;
   padding: 40px 36px 38px;
   text-align: left;
+  transition: border-color 0.25s ease;
 }
 
 .a26-why-card:hover {
@@ -19583,6 +19584,7 @@ footer {
 
 .a26-why-choose .a26-why-card:hover {
   background: #111;
+  border-color: rgba(193, 163, 107, 0.65);
 }
 
 .a26-why-icon {
