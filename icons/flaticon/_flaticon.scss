@@ -1,0 +1,178 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 19/06/2020 07:04
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-gamepad:before { content: "\f100"; }
+.flaticon-chess:before { content: "\f101"; }
+.flaticon-tickets:before { content: "\f102"; }
+.flaticon-theater:before { content: "\f103"; }
+.flaticon-cinema:before { content: "\f104"; }
+.flaticon-seats-at-the-hall:before { content: "\f105"; }
+.flaticon-meeting:before { content: "\f106"; }
+.flaticon-round-table:before { content: "\f107"; }
+.flaticon-boxing-gloves:before { content: "\f108"; }
+.flaticon-stationary-bike:before { content: "\f109"; }
+.flaticon-strength:before { content: "\f10a"; }
+.flaticon-squash-rackets:before { content: "\f10b"; }
+.flaticon-tennis:before { content: "\f10c"; }
+.flaticon-relax:before { content: "\f10d"; }
+.flaticon-massage:before { content: "\f10e"; }
+.flaticon-massage-1:before { content: "\f10f"; }
+.flaticon-massage-2:before { content: "\f110"; }
+.flaticon-shuttlecock:before { content: "\f111"; }
+.flaticon-badminton:before { content: "\f112"; }
+.flaticon-badminton-1:before { content: "\f113"; }
+.flaticon-reading-book:before { content: "\f114"; }
+.flaticon-juggler:before { content: "\f115"; }
+.flaticon-book:before { content: "\f116"; }
+.flaticon-drama:before { content: "\f117"; }
+.flaticon-working:before { content: "\f118"; }
+.flaticon-books:before { content: "\f119"; }
+.flaticon-knight:before { content: "\f11a"; }
+.flaticon-chesspieces:before { content: "\f11b"; }
+.flaticon-dice:before { content: "\f11c"; }
+.flaticon-fountain:before { content: "\f11d"; }
+.flaticon-fountain-1:before { content: "\f11e"; }
+.flaticon-grandfather:before { content: "\f11f"; }
+.flaticon-basketball:before { content: "\f120"; }
+.flaticon-menu:before { content: "\f121"; }
+.flaticon-coffee-break:before { content: "\f122"; }
+.flaticon-coffee-cup:before { content: "\f123"; }
+.flaticon-outdoor-table:before { content: "\f124"; }
+.flaticon-sofa:before { content: "\f125"; }
+.flaticon-green:before { content: "\f126"; }
+.flaticon-grass:before { content: "\f127"; }
+.flaticon-pool:before { content: "\f128"; }
+.flaticon-swimming-pool:before { content: "\f129"; }
+.flaticon-swimming:before { content: "\f12a"; }
+.flaticon-swimming-pool-1:before { content: "\f12b"; }
+.flaticon-basketball-1:before { content: "\f12c"; }
+.flaticon-basketball-2:before { content: "\f12d"; }
+.flaticon-slider:before { content: "\f12e"; }
+.flaticon-seesaw:before { content: "\f12f"; }
+.flaticon-playground:before { content: "\f130"; }
+.flaticon-running:before { content: "\f131"; }
+.flaticon-jogging:before { content: "\f132"; }
+.flaticon-jogging-1:before { content: "\f133"; }
+.flaticon-cricket:before { content: "\f134"; }
+.flaticon-cricket-1:before { content: "\f135"; }
+.flaticon-car:before { content: "\f136"; }
+.flaticon-taxi:before { content: "\f137"; }
+.flaticon-toilet:before { content: "\f138"; }
+.flaticon-litter-box:before { content: "\f139"; }
+.flaticon-selection:before { content: "\f13a"; }
+.flaticon-bathtub:before { content: "\f13b"; }
+.flaticon-bathtub-1:before { content: "\f13c"; }
+.flaticon-bed:before { content: "\f13d"; }
+.flaticon-bed-1:before { content: "\f13e"; }
+.flaticon-double-bed:before { content: "\f13f"; }
+.flaticon-bed-2:before { content: "\f140"; }
+.flaticon-bed-3:before { content: "\f141"; }
+.flaticon-balcony:before { content: "\f142"; }
+.flaticon-balcony-1:before { content: "\f143"; }
+.flaticon-balcony-2:before { content: "\f144"; }
+    
+    $font-Flaticon-gamepad: "\f100";
+    $font-Flaticon-chess: "\f101";
+    $font-Flaticon-tickets: "\f102";
+    $font-Flaticon-theater: "\f103";
+    $font-Flaticon-cinema: "\f104";
+    $font-Flaticon-seats-at-the-hall: "\f105";
+    $font-Flaticon-meeting: "\f106";
+    $font-Flaticon-round-table: "\f107";
+    $font-Flaticon-boxing-gloves: "\f108";
+    $font-Flaticon-stationary-bike: "\f109";
+    $font-Flaticon-strength: "\f10a";
+    $font-Flaticon-squash-rackets: "\f10b";
+    $font-Flaticon-tennis: "\f10c";
+    $font-Flaticon-relax: "\f10d";
+    $font-Flaticon-massage: "\f10e";
+    $font-Flaticon-massage-1: "\f10f";
+    $font-Flaticon-massage-2: "\f110";
+    $font-Flaticon-shuttlecock: "\f111";
+    $font-Flaticon-badminton: "\f112";
+    $font-Flaticon-badminton-1: "\f113";
+    $font-Flaticon-reading-book: "\f114";
+    $font-Flaticon-juggler: "\f115";
+    $font-Flaticon-book: "\f116";
+    $font-Flaticon-drama: "\f117";
+    $font-Flaticon-working: "\f118";
+    $font-Flaticon-books: "\f119";
+    $font-Flaticon-knight: "\f11a";
+    $font-Flaticon-chesspieces: "\f11b";
+    $font-Flaticon-dice: "\f11c";
+    $font-Flaticon-fountain: "\f11d";
+    $font-Flaticon-fountain-1: "\f11e";
+    $font-Flaticon-grandfather: "\f11f";
+    $font-Flaticon-basketball: "\f120";
+    $font-Flaticon-menu: "\f121";
+    $font-Flaticon-coffee-break: "\f122";
+    $font-Flaticon-coffee-cup: "\f123";
+    $font-Flaticon-outdoor-table: "\f124";
+    $font-Flaticon-sofa: "\f125";
+    $font-Flaticon-green: "\f126";
+    $font-Flaticon-grass: "\f127";
+    $font-Flaticon-pool: "\f128";
+    $font-Flaticon-swimming-pool: "\f129";
+    $font-Flaticon-swimming: "\f12a";
+    $font-Flaticon-swimming-pool-1: "\f12b";
+    $font-Flaticon-basketball-1: "\f12c";
+    $font-Flaticon-basketball-2: "\f12d";
+    $font-Flaticon-slider: "\f12e";
+    $font-Flaticon-seesaw: "\f12f";
+    $font-Flaticon-playground: "\f130";
+    $font-Flaticon-running: "\f131";
+    $font-Flaticon-jogging: "\f132";
+    $font-Flaticon-jogging-1: "\f133";
+    $font-Flaticon-cricket: "\f134";
+    $font-Flaticon-cricket-1: "\f135";
+    $font-Flaticon-car: "\f136";
+    $font-Flaticon-taxi: "\f137";
+    $font-Flaticon-toilet: "\f138";
+    $font-Flaticon-litter-box: "\f139";
+    $font-Flaticon-selection: "\f13a";
+    $font-Flaticon-bathtub: "\f13b";
+    $font-Flaticon-bathtub-1: "\f13c";
+    $font-Flaticon-bed: "\f13d";
+    $font-Flaticon-bed-1: "\f13e";
+    $font-Flaticon-double-bed: "\f13f";
+    $font-Flaticon-bed-2: "\f140";
+    $font-Flaticon-bed-3: "\f141";
+    $font-Flaticon-balcony: "\f142";
+    $font-Flaticon-balcony-1: "\f143";
+    $font-Flaticon-balcony-2: "\f144";

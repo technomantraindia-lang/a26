@@ -1,0 +1,149 @@
+/* Comign Soon ======= */
+.coming-soon{
+	height:100vh;
+	position:relative;
+}
+.countdown{
+	margin-left: auto;
+	@include respond('tab-port'){
+		margin-left: 0;
+	}
+	.date {
+		display: inline-block;
+		text-align: center;
+		width: 130px;
+		@include respond('tab-port'){
+			text-align: left;
+		}
+		@include respond('phone'){
+			width: 70px;
+		}
+		div{
+			display:block;
+			line-height: 30px;
+			strong{
+				font-size: 20px;
+				font-weight: 400;
+				color: #1b1b1b;
+				text-transform: uppercase;
+				box-shadow: inset 0px -4px 0  $primary;
+				line-height: 18px;
+				display: inline-block;
+				@include respond('phone'){
+					font-size: 12px;
+					line-height: 12px;
+				}
+			}
+		}
+		.time{
+			font-size: 70px;
+			font-family: Poppins;
+			color:#000;
+			font-weight: 700;
+			display: block;
+			@include respond('phone'){
+				font-size: 40px;
+			    line-height: 1;	
+			}
+		}
+	}
+}
+.countdown-box {
+    display: flex;
+	line-height: 70px;
+	align-items: start;
+	padding: 50px 50px 0;
+	@include respond('tab-port'){
+		display:block;
+		padding: 50px 20px 0;
+	}
+	.button-home {
+		@include respond('tab-port'){
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+		}
+	}
+}
+.coming-head{
+    display: block;
+    max-width: 1170px;
+    text-align: center;
+	margin-top: 50px;
+	@include respond('tab-port'){
+		margin-right: unset;
+		text-align:left;
+		padding-left:20px;
+		padding-right: 20px;
+	}
+	@include respond('phone'){
+		margin-top: 20px;
+	}
+	h2{
+		line-height: 162px;
+		font-size: 162px;
+		display: inline;
+		position: relative;
+		font-family: $font-family-base;
+		@include respond('phone'){
+			line-height: 1;
+			font-size: 100px;
+		}
+		
+		strong{
+			color: #1b1b1b;
+			font-weight: 900;
+		}
+		span{
+			font-size: 35px;
+			color: #1b1b1b;
+			position: absolute;
+			right: 26px;
+			line-height: 40px;
+			@include respond('phone'){
+				font-size: 20px;
+				right: 20px;
+				line-height: 30px;
+			}
+		}
+	}
+	.input-group{ 
+		background:#ffffff;
+		border:1px solid #e3e3e3;
+		border-radius:50px;
+		
+		.btn{
+			border-radius: 40px;
+			height: 40px;
+			padding: 0;
+			width: 40px;
+			margin: 5px;
+		}
+	}
+	.subscribe-form {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		@include respond('tab-port'){
+			margin-left:unset;
+		}
+		input {
+			background-color: rgba(0,0,0,0);
+			border: 2px solid rgba(255,255,255,0.5);
+			border-radius: 30px !important;
+			height: 50px;
+			padding: 10px 20px;
+			margin-right: 5px;
+			color: #000;
+			font-size: 15px;
+		}
+	}
+}/* 
+.coming-head .subscribe-form .form-control:hover,
+.coming-head .subscribe-form .form-control:active,
+.coming-head .subscribe-form .form-control:focus,
+.coming-head .subscribe-form .form-control{
+	border:0;
+	border-radius: 40px !important;
+} */

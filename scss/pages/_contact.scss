@@ -1,0 +1,93 @@
+/* contact-box */
+.contact-box {
+    background: #fff;
+    border-color: rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 4px;
+	&.p-a30{
+		@include respond('phone'){
+			padding: 15px;
+		}
+	}
+	.title-box {
+		margin: -30px -30px 30px -30px;
+		padding: 20px 30px;
+		background: $primary;
+		font-size: 24px;
+		font-weight: 600;
+		color: #fff;
+		line-height: 35px;
+		@include respond('phone'){
+			margin: -15px -15px 15px -15px;
+			padding: 10px 15px;
+		}
+	}
+	.form-control {
+		background: $light;
+		font-size: 16px;
+		height: 46px;
+		padding: 10px 20px;
+		border-radius: 3px;
+		border: 1px solid rgba(0,0,0,.05);
+	}
+	.form-group{
+		margin-bottom:30px;
+		@include respond('phone'){
+			margin-bottom:15px;
+		}
+	}
+	textarea.form-control{
+		height: 150px;
+		padding-top: 20px;
+	}
+}
+.contact-question {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	 li {
+		position: relative;
+		padding: 0 0 30px 50px;
+		z-index: 1;
+		i {
+			width: 35px;
+			height: 35px;
+			background: $primary;
+			line-height: 37px;
+			text-align: center;
+			color: #fff;
+			font-size: 18px;
+			border-radius: 40px;
+			position: absolute;
+			left: 0;
+			top: 5px;
+		}
+		.title {
+			font-size: 20px;
+			line-height: 28px;
+			margin-bottom: 5px;
+		}
+		p {
+			margin: 0;
+			font-size: 16px;
+			font-style: italic;
+			color: #333;
+			line-height: 28px;
+		}
+		&:after {
+			content: "";
+			background: #000;
+			width: 2px;
+			height: 100%;
+			position: absolute;
+			left: 17px;
+			top: 6px;
+			z-index: -1;
+			bottom: 0;
+			opacity: .2;
+		}
+		&:last-child:after {
+			display: none;
+		}
+	}
+}
