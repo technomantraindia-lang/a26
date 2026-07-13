@@ -35,9 +35,7 @@
 		'        <h2 id="a26EnquiryTitle">Get in Touch</h2>',
 		'        <p class="a26-enquiry-subtitle">Send us your requirement and our team will get back to you shortly.</p>',
 		'        <div class="a26-enquiry-form-msg dzFormMsg"></div>',
-		'        <form class="a26-enquiry-form" action="script/contact_smtp.php" method="post" novalidate>',
-		'          <input type="hidden" name="dzToDo" value="Contact">',
-		'          <input type="hidden" name="reCaptchaEnable" value="0">',
+		'        <form class="a26-enquiry-form" action="javascript:void(0);" method="post" novalidate>',
 		'          <div class="a26-enquiry-grid">',
 		'            <label class="a26-enquiry-field">',
 		'              <i class="las la-user" aria-hidden="true"></i>',
@@ -141,28 +139,46 @@
 			e.preventDefault();
 			var $form = $(this);
 			var $submit = $form.find('.a26-enquiry-submit');
+			var form = $form[0];
 
-			showMessage('success', 'Submitting...');
+			function getFieldValue(name) {
+				var field = form.querySelector('[name="' + name + '"]');
+				return field ? String(field.value || '').trim() : '';
+			}
+
+			var lines = [
+				'Hi A26 DESIGNS, I would like to enquire.',
+				'',
+				'Name: ' + getFieldValue('dzFirstName'),
+				'Phone: ' + getFieldValue('dzPhoneNumber'),
+				'Email: ' + getFieldValue('dzEmail')
+			];
+			var company = getFieldValue('dzOther[company_name]');
+			var service = getFieldValue('dzOther[service]');
+			var subject = getFieldValue('dzOther[subject]');
+			var message = getFieldValue('dzMessage');
+			if (company) lines.push('Company: ' + company);
+			if (service) lines.push('Service: ' + service);
+			if (subject) lines.push('Subject: ' + subject);
+			if (message) {
+				lines.push('');
+				lines.push('Message:');
+				lines.push(message);
+			}
+
+			showMessage('success', 'Opening WhatsApp...');
 			$submit.prop('disabled', true);
 
-			$.ajax({
-				method: 'POST',
-				url: $form.attr('action'),
-				data: $form.serialize(),
-				dataType: 'json'
-			}).done(function (res) {
-				if (res && res.status === 1) {
-					showMessage('success', res.msg || 'Thank you! We will contact you shortly.');
-					$form[0].reset();
-					setTimeout(closeModal, 2200);
-				} else {
-					showMessage('error', (res && res.msg) ? res.msg : 'Something went wrong. Please try again.');
-				}
-			}).fail(function () {
-				showMessage('error', 'Unable to send enquiry right now. Please call 9978120010.');
-			}).always(function () {
-				$submit.prop('disabled', false);
-			});
+			window.open(
+				'https://wa.me/919978120010?text=' + encodeURIComponent(lines.join('\n')),
+				'_blank',
+				'noopener,noreferrer'
+			);
+
+			showMessage('success', 'Thank you! Continue on WhatsApp to send your enquiry.');
+			$form[0].reset();
+			$submit.prop('disabled', false);
+			window.setTimeout(closeModal, 2200);
 		});
 	});
 })(jQuery);

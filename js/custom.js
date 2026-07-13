@@ -78,7 +78,10 @@ var KingArchitect = function(){
 	
 	/* Magnific Popup ============ */
 	var MagnificPopup = function(){
-		'use strict';	
+		'use strict';
+		if (!jQuery.fn.magnificPopup) {
+			return;
+		}
 		/* magnificPopup function */
 		jQuery('.mfp-gallery').magnificPopup({
 			delegate: '.mfp-link',
@@ -336,7 +339,10 @@ var KingArchitect = function(){
 	
 	/* handle Bootstrap Select ============ */
 	var handleBootstrapSelect = function(){
-		/* Bootstrap Select box function by  = bootstrap-select.min.js */ 
+		/* Bootstrap Select box function by  = bootstrap-select.min.js */
+		if (!jQuery.fn.selectpicker) {
+			return;
+		}
 		if (jQuery('select:not(.a26-enquiry-select):not(.a26-contact-select)').length) {
 		    jQuery('select:not(.a26-enquiry-select):not(.a26-contact-select)').selectpicker();
 		}

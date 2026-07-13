@@ -22267,7 +22267,7 @@ footer {
   border: 1px solid rgba(240, 180, 41, 0.35);
   border-radius: 50%;
   color: #f0b429;
-  display: inline-flex;
+  display: flex;
   flex: 0 0 48px;
   font-size: 22px;
   height: 48px;
@@ -22275,6 +22275,11 @@ footer {
   line-height: 1;
   margin-bottom: 0;
   width: 48px;
+}
+
+.a26-about-experience-icon i {
+  display: block;
+  line-height: 1;
 }
 
 .a26-about-experience-text strong {
@@ -22307,18 +22312,6 @@ footer {
   font-weight: 400;
   line-height: 1;
   margin-bottom: 4px;
-}
-
-.a26-about-experience-box span {
-  color: rgba(255, 255, 255, 0.88);
-  display: block;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  line-height: 1.35;
-  margin-bottom: 0;
-  text-transform: uppercase;
 }
 
 .a26-about-experience-box small {
@@ -25007,10 +25000,6 @@ body.a26-enquiry-open {
   column-fill: balance;
   column-gap: 20px;
   position: relative;
-}
-
-.a26-project-grid-sizer {
-  display: none;
 }
 
 .a26-project-grid.is-hidden {
