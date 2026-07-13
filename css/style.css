@@ -22656,20 +22656,46 @@ footer {
   color: #3d4659;
 }
 
-/* Stats — navy full bleed */
+/* Stats */
 .a26-about-stats {
+  background: #171717;
   padding: 0;
 }
 
 .a26-about-stats-bar {
-  background:
-    radial-gradient(circle at 12% 50%, rgba(240, 180, 41, 0.12), transparent 38%),
-    radial-gradient(circle at 88% 50%, rgba(240, 180, 41, 0.08), transparent 32%),
-    linear-gradient(135deg, #0f1f3d 0%, #162f52 52%, #0f1f3d 100%);
+  background: #171717;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  padding: 52px calc(50vw - 50%);
+  padding: 68px calc(50vw - 50%);
   width: 100vw;
+}
+
+.a26-about-stats .a26-counter-wrap {
+  margin-top: 0;
+  max-width: 1380px;
+  width: calc(100% - 120px);
+}
+
+.a26-about-stats .a26-counter-grid {
+  align-items: center;
+}
+
+.a26-about-stats .a26-counter-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.a26-about-stats .a26-counter-item:after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 767px) {
+  .a26-about-stats .a26-counter-wrap {
+    width: calc(100% - 30px);
+  }
 }
 
 .a26-about-stats-inner {
