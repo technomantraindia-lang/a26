@@ -21647,7 +21647,9 @@ footer {
 .a26-map-card {
   background: rgba(255, 250, 244, 0.92);
   backdrop-filter: blur(2px);
-  max-width: 520px;
+  box-sizing: border-box;
+  max-width: none;
+  width: 100%;
 }
 
 .a26-map-art {
