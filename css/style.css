@@ -22260,7 +22260,8 @@ footer {
 
 .a26-about-story-copy h2 em {
   color: #c5a073;
-  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
   font-weight: 400;
 }
 
@@ -22316,8 +22317,10 @@ footer {
 
 .a26-about-signature {
   color: #c5a073;
-  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-family: "Times New Roman", Times, serif;
   font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -22399,11 +22402,11 @@ footer {
 
 .a26-about-experience-box {
   align-items: center;
-  background: linear-gradient(135deg, #0f1f3d 0%, #1a3358 100%);
-  border: 1px solid rgba(240, 180, 41, 0.28);
+  background: #f0b429;
+  border: 1px solid rgba(255, 255, 255, 0.34);
   border-radius: 14px;
   bottom: 36px;
-  box-shadow: 0 20px 44px rgba(15, 31, 61, 0.28);
+  box-shadow: 0 20px 44px rgba(122, 75, 0, 0.22);
   color: #fff;
   display: flex;
   gap: 14px;
@@ -22418,10 +22421,10 @@ footer {
 
 .a26-about-experience-icon {
   align-items: center;
-  background: rgba(240, 180, 41, 0.12);
-  border: 1px solid rgba(240, 180, 41, 0.35);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(15, 31, 61, 0.28);
   border-radius: 50%;
-  color: #f0b429;
+  color: #0f1f3d;
   display: flex;
   flex: 0 0 48px;
   font-size: 22px;
@@ -22438,7 +22441,7 @@ footer {
 }
 
 .a26-about-experience-text strong {
-  color: #f0b429;
+  color: #0f1f3d;
   display: block;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 34px;
@@ -22448,7 +22451,7 @@ footer {
 }
 
 .a26-about-experience-text span {
-  color: rgba(255, 255, 255, 0.88);
+  color: #1a3358;
   display: block;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 11px;
@@ -22460,7 +22463,7 @@ footer {
 }
 
 .a26-about-experience-box strong {
-  color: #f0b429;
+  color: #0f1f3d;
   display: block;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 34px;
