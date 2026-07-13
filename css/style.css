@@ -22144,8 +22144,9 @@ footer {
 /* Our Story — boxed panel on rich background */
 .a26-about-story {
   background:
-    linear-gradient(135deg, rgba(15, 31, 61, 0.92) 0%, rgba(22, 47, 82, 0.88) 48%, rgba(15, 31, 61, 0.94) 100%),
-    url("../images/a26-premium/architecture-detail.jpg") center/cover no-repeat;
+    radial-gradient(circle at 14% 18%, rgba(197, 160, 115, 0.16), transparent 30%),
+    radial-gradient(circle at 88% 82%, rgba(72, 96, 84, 0.14), transparent 32%),
+    linear-gradient(180deg, #eef2ec 0%, #f8faf6 48%, #dfe7df 100%);
   overflow: hidden;
   padding: 88px 0;
   position: relative;
@@ -22153,10 +22154,12 @@ footer {
 
 .a26-about-story::before {
   background:
-    radial-gradient(circle at 12% 20%, rgba(240, 180, 41, 0.18), transparent 32%),
-    radial-gradient(circle at 88% 78%, rgba(240, 180, 41, 0.12), transparent 28%);
+    linear-gradient(90deg, rgba(72, 96, 84, 0.05) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(72, 96, 84, 0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
   content: "";
   inset: 0;
+  opacity: 0.55;
   pointer-events: none;
   position: absolute;
   z-index: 0;
