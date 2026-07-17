@@ -2,6 +2,8 @@
 	'use strict';
 
 	$(document).ready(function () {
+		loadHomeProjects();
+
 		if ($('.amenities-carousel').length) {
 			$('.amenities-carousel').owlCarousel({
 				loop: true,
@@ -38,6 +40,63 @@
 			});
 		}
 	});
+
+	function escapeHtml(value) {
+		return String(value || '').replace(/[&<>"']/g, function (char) {
+			return {
+				'&': '&amp;',
+				'<': '&lt;',
+				'>': '&gt;',
+				'"': '&quot;',
+				"'": '&#039;'
+			}[char];
+		});
+	}
+
+	function loadHomeProjects() {
+		var list = document.getElementById('homeProjectList');
+		var empty = document.getElementById('homeProjectEmpty');
+		var area = document.querySelector('#ourServices .a26-dynamic-projects');
+		if (!list) return;
+
+		fetch('backend/api/projects.php', { cache: 'no-store' })
+			.then(function (response) { return response.json(); })
+			.then(function (data) {
+				var projects = data && data.success ? data.projects : [];
+				list.innerHTML = '';
+
+				if (!projects.length) {
+					if (empty) empty.classList.remove('is-hidden');
+					return;
+				}
+
+				if (empty) empty.classList.add('is-hidden');
+				if (area && projects[0].main_image) {
+					area.style.backgroundImage = 'url(' + projects[0].main_image + ')';
+				}
+
+				projects.slice(0, 8).forEach(function (project, index) {
+					var delay = 0.2 + ((index % 5) * 0.2);
+					var image = project.main_image || '';
+					list.insertAdjacentHTML('beforeend',
+						'<div class="col wow bounceInUp" data-wow-duration="2s" data-wow-delay="' + delay.toFixed(1) + 's">' +
+							'<div class="service-box" tabindex="0" role="button">' +
+								'<div class="media"><img src="' + image + '" alt="' + escapeHtml(project.project_name) + '"></div>' +
+								'<div class="info">' +
+									'<h4 class="title">' + escapeHtml(project.project_name) + '</h4>' +
+									'<p>' + escapeHtml(project.category || 'Project') + '</p>' +
+								'</div>' +
+							'</div>' +
+						'</div>'
+					);
+				});
+
+				initServiceCards();
+			})
+			.catch(function () {
+				if (empty) empty.classList.remove('is-hidden');
+			});
+	}
 
 	(function initTestimonials() {
 		var carousel = document.querySelector('.a26-testimonials-carousel');
@@ -237,8 +296,14 @@
 	}());
 
 	(function initServiceCards() {
+		initServiceCards();
+	}());
+
+	function initServiceCards() {
 		var cards = document.querySelectorAll('#ourServices.home-services .service-box');
 		cards.forEach(function (card) {
+			if (card.getAttribute('data-service-bound') === 'true') return;
+			card.setAttribute('data-service-bound', 'true');
 			card.setAttribute('tabindex', '0');
 			card.setAttribute('role', 'button');
 			card.addEventListener('click', function () {
@@ -251,7 +316,7 @@
 				}
 			});
 		});
-	}());
+	}
 
 	function observeInView(elementId, className, threshold) {
 		var section = document.getElementById(elementId);
