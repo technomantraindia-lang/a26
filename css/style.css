@@ -28856,7 +28856,7 @@ body.a26-project-modal-open {
 }
 
 .a26-about-page .a26-about-vmv-head {
-  margin-bottom: 34px !important;
+  margin-bottom: 54px !important;
 }
 
 .a26-about-page .a26-about-vmv-kicker {
@@ -28905,7 +28905,7 @@ body.a26-project-modal-open {
   display: block !important;
   height: 100% !important;
   min-height: 330px !important;
-  padding: 38px 46px 34px !important;
+  padding: 34px 46px 34px !important;
   position: relative !important;
   text-align: center !important;
 }
@@ -28920,14 +28920,15 @@ body.a26-project-modal-open {
   box-shadow: 0 16px 32px rgba(15, 31, 61, 0.24) !important;
   color: #f0b429 !important;
   flex-basis: auto !important;
-  font-size: 25px !important;
-  height: 58px !important;
-  left: 50% !important;
-  margin: 0 auto 24px !important;
-  position: relative !important;
-  top: auto !important;
-  transform: translateX(-50%) !important;
-  width: 58px !important;
+  font-size: 22px !important;
+  height: 52px !important;
+  left: auto !important;
+  margin: 0 !important;
+  position: absolute !important;
+  right: 34px !important;
+  top: 28px !important;
+  transform: none !important;
+  width: 52px !important;
 }
 
 .a26-about-page .a26-about-vmv-copy h3 {
@@ -28960,6 +28961,13 @@ body.a26-project-modal-open {
   margin-left: auto !important;
   margin-right: auto !important;
   max-width: 660px !important;
+}
+
+.a26-about-page .a26-about-vmv-extra {
+  color: #5c5147 !important;
+  font-size: 16px !important;
+  line-height: 1.68 !important;
+  margin-top: 14px !important;
 }
 
 .a26-about-page .a26-about-vmv-tags {
